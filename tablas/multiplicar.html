@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiplicación Tech - Tabla del 3</title>
     <link rel="stylesheet" href="multiplicar.css">
+    <script src="multiplicar.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="glass-container">
         <header>
-            <button class="btn-tech">PROBAR</button>
-            <h1 class="title">SISTEMA: TABLA 03</h1>
+            <button class="btn-tech" onclick="generarTablas()">PROBAR</button>
+            <h1 class="title" id="titulotxt">SISTEMA: TABLA 3</h1>
         </header>
 
-        <main class="table-grid" >
+        <main class="table-grid" id="txtTabla" >
             <div class="item"><span class="op">3 x 1</span> <span class="res">03</span></div>
             <div class="item"><span class="op">3 x 2</span> <span class="res">06</span></div>
             <div class="item"><span class="op">3 x 3</span> <span class="res">09</span></div>
