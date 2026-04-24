@@ -126,3 +126,77 @@ body {
     font-weight: bold;
     text-shadow: 0 0 5px var(--neon-cyan);
 }
+/* Grupo del input */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    color: var(--text-main);
+    letter-spacing: 2px;
+}
+
+/* Caja de texto tecnológica */
+#numInput {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--accent-purple);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--neon-cyan);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al hacer foco (clic) */
+#numInput:focus {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Quitar flechas por defecto del input number */
+#numInput::-webkit-inner-spin-button, 
+#numInput::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+/* Texto de ayuda debajo del título */
+.helper-text {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    opacity: 0.6;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* Mensaje cuando la tabla está vacía */
+.empty-msg {
+    grid-column: 1 / -1;
+    padding: 40px;
+    opacity: 0.3;
+    border: 1px dashed var(--accent-purple);
+    border-radius: 10px;
+}
+
+/* Animación sutil para que el usuario sepa que el botón es clickeable */
+.btn-tech {
+    width: 100%; /* Botón más grande y fácil de pulsar */
+    letter-spacing: 2px;
+}
+
+/* Mejora visual del input cuando está activo */
+#numInput:focus {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+    transform: scale(1.05);
+}

@@ -1,9 +1,10 @@
 function generarTablas(){
 
+    
     let titulo =document.getElementById("titulotxt")
     let contenedor = document.getElementById("txtTabla");
     let contenido ="";
-    let numero =5;
+    let numero =parseInt(document.getElementById("numInput").value);
 
     for(let i=1;i<=10 ;i++){
         contenido += `
